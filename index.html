@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STEAM Game Explorer</title>
+    <link rel="shortcut icon" type="image/png" href="/img/steam.png">
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <!-- Add HTML content, SVG drawing area, ... -->
+    <div id="tooltip"></div>
+
+
+
+    <div class="title-section">
+
+        <h1 class="main-title">Full STEAM<span style="position: relative; top: -0.5em; font-size: 0.6em;">&reg;</span>Ahead: A Visual Game Explorer</h1>
+        <p class="tagline">Discover your next favorite game by playing with our interlinked visuals.</p>
+
+    </div>
+
+    <div class="searchInput">
+        <input type="text" placeholder="Search Game">
+        <div class="resultBox">
+            <!-- here list are inserted from javascript -->
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+    </div>
+
+<!--    <div class="description">-->
+<!--        <p> Steam boasts tens of thousands of games and picking a new computer video game to play can be difficult.-->
+<!--            Whether you want to play a game similar to your last completed favorite, or are curious about a new genre,-->
+<!--            filter and interact with the visualization to find just the game you are looking for.</p>-->
+<!--    </div>-->
+    <div class="container">
+
+        <div class="left-side" style="float: left">
+            <svg id="cluster-chart"></svg>
+            <svg id="single-bar-chart"></svg>
+        </div>
+
+        <div class="right-side" style="float: left">
+            <div class="top-right">
+                <svg id="genre-chart"></svg>
+                <svg id ="mode-chart"></svg>
+            </div>
+            <div class="parallel-widget">
+                <span class="chart-title">Top 10 games by</span>
+                <select id="axis-selector" onchange="updateParallelSort()">
+                    <option value="rating">Rating</option>
+                    <option value="price">Price</option>
+                    <option value="duration">Duration</option>
+                    <option value="difficulty">Difficulty</option>
+                    <option value="date">Date</option>
+                </select>
+            </div>
+            <div class="bottom-right">
+                <svg id="parallel-chart"></svg>
+            </div>
+        </div>
+    </div>
+    
+    <!-- D3 bundle -->
+    <script src="js/d3.v6.min.js"></script>
+
+    <!-- Our JS code -->
+    <script src="js/main.js"></script>
+    <script src="js/clusterChart.js"></script>
+    <script src="js/genreBarChart.js"></script>
+    <script src="js/modeBarChart.js"></script>
+    <script src="js/tagChart.js"></script>
+    <script src="js/parallelChart.js"></script>
+</body>
+</html>
