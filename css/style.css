@@ -1,0 +1,318 @@
+
+.title-section {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*The css code below makes main-title disappear for some reason.*/
+
+/*.main-title {*/
+/*    font-size: 36px;*/
+/*    font-weight: bold;*/
+/*    color: #fff;*/
+/*}*/
+
+.tagline {
+    margin-top: -15px;
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 35px;
+
+}
+
+
+/*Chart Titles */
+
+.chart-title {
+    font-size: 20px;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    fill: #4a4a4a;
+    text-anchor: middle;
+}
+
+
+/*Tooltip */
+#tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 200ms ease;
+}
+
+.tooltip-label {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    word-wrap: normal;
+    width: 200px;
+}
+
+/*Tooltip for cluster chart*/
+.add-to-top10 {
+    font-size: 13px;
+    /*font-weight: bold;*/
+    color: skyblue;
+    margin-top: -2px;
+    text-align: center;
+}
+
+/* All charts */
+.container {
+    font-family: 'Roboto Slab', serif;
+    padding-top: 20px;
+}
+
+.description {
+    width: 400px;
+    word-wrap: normal;
+}
+
+.axis line, .axis path {
+    fill: none;
+    stroke: #ddd;
+    shape-rendering: crispEdges;
+}
+
+/** parallel chart **/
+.position-axis .domain {
+    display: none;
+}
+
+.position-axis text {
+    display: none;
+}
+
+.parallel-text {
+    font-size: 12px;
+}
+
+.parallel-axis-title {
+    font-size: 14px;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.parallel-widget {
+    float: right;
+    padding-right: 5px;
+}
+
+.parallel-line:hover, .parallel-line.hovered {
+    stroke-width: 3;
+}
+
+.parallel-line.highlighted {
+    stroke-width: 3;
+}
+
+.parallel-text.selected {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.parallel-text:hover {
+    text-decoration-line: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+/** Cluster Chart **/
+
+.axis-y-text {
+    font-size: 15px;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.axis-x-text{
+    font-size: 15px;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.left-side {
+    display: flex;
+    flex-direction: row;
+}
+
+#labelLeft, #labelRight {
+    dominant-baseline: hanging;
+    font-size: 12px;
+}
+
+#labelLeft {
+    text-anchor: end;
+}
+
+#labelRight {
+    text-anchor: start;
+}
+#sliderTitle {
+    text-anchor: middle;
+}
+.point {
+    opacity: 0.4;
+    fill: #4682B4;
+}
+
+.legend-boxes-active{
+    fill: lightgrey;
+}
+
+.cluster-highlighted{
+    fill: lightgreen;
+    opacity: 1;
+    stroke: black;
+    stroke-width: 2px;
+
+}
+
+.similar-games {
+    font-size: 13px;
+    /*font-weight: bold;*/
+    color: white;
+    margin-top: -7px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.similar-games span {
+    color: white;
+}
+
+.cluster-highlighted-indie{
+    fill: #8dd3c7;
+    opacity: 1;
+    stroke: black;
+    saturation: 200%;
+}
+
+.cluster-highlighted-action {
+    fill: #ffffb3;
+    opacity: 1;
+    stroke: black;
+}
+.cluster-highlighted-adventure{
+    fill: #bebada;
+    opacity: 1;
+    stroke: black;
+}
+.cluster-highlighted-rpg {
+    fill: #fb8072;
+    opacity: 1;
+    stroke: black;
+}
+.cluster-highlighted-strategy {
+    fill: #80b1d3;
+    opacity: 1;
+    stroke: black;
+}
+.cluster-highlighted-casual {
+    fill: #fdb462;
+    opacity: 1;
+    stroke: black;
+}
+.cluster-highlighted-simulation {
+    fill: #b3de69;
+    opacity: 1;
+    stroke: black;
+    brightness: 1.75;
+}
+.cluster-highlighted-racing {
+    fill: #fccde5;
+    opacity: 1;
+    stroke: black;
+}
+.cluster-highlighted-sports {
+    fill: #d9d9d9;
+    opacity: 1;
+    stroke: black;
+}
+.cluster-highlighted-violent {
+    fill: #bc80bd;
+    opacity: 1;
+    stroke: black;
+}
+
+/** tag chart **/
+.tag-label {
+    font-size: 12px;
+}
+
+/** Search Bar **/
+.searchInput input{
+    height: 30px;
+    width: 25%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.searchInput.active input{
+    border-radius: 5px 5px 0 0;
+}
+
+.searchInput .resultBox{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.searchInput.active .resultBox{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.resultBox:empty {
+    display: none;
+}
+
+.resultBox li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 90%;
+    cursor: default;
+    border-radius: 3px;
+}
+
+.searchInput.active .resultBox li{
+    display: block;
+}
+.resultBox li:hover{
+    background: grey;
+}
+
+.searchInput .icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #644bff;
+    cursor: pointer;
+}
